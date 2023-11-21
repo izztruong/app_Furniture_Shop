@@ -30,6 +30,8 @@
                 android:id="@+id/txtname_mycart"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:ellipsize="end"
                 android:textSize="18dp"
                 android:layout_marginBottom="5dp"
                 android:text="TextView" />
@@ -65,7 +67,6 @@
 
                 <ImageView
                     android:id="@+id/iconadd_mycart"
-
                     android:background="@drawable/icon_sp"
                     android:layout_gravity="bottom"
                     android:layout_width="wrap_content"

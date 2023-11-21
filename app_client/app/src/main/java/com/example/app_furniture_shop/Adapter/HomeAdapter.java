@@ -18,6 +18,8 @@ import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
+import retrofit2.Callback;
+
 public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder> {
     private ArrayList<Product> list;
     private Context context;
@@ -28,6 +30,7 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder> {
         this.context = context;
         this.onclickItem=onclickItem;
     }
+
 
     @NonNull
     @Override

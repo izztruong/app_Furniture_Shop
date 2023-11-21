@@ -5,10 +5,8 @@
     android:layout_height="match_parent"
     tools:context=".Fragment.TableFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_table"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="table" />
-
+        android:layout_height="match_parent" />
 </FrameLayout>

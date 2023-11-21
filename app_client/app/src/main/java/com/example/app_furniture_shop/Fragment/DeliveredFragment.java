@@ -38,13 +38,13 @@ public class DeliveredFragment extends Fragment {
     }
     private void setAdapter(){
         list= new ArrayList<>();
-        list.add(new Product(1,"aa",2,12,"https://res.cloudinary.com/dkchoy5df/image/upload/v1691167512/Books/dgrmk3oikfxuni52gsmd.jpg","ddddddddddddddddddđ"));
-        list.add(new Product(2,"bb",2,13,"https://res.cloudinary.com/dkchoy5df/image/upload/v1691167359/Books/mq53ueg7mf6685qszyha.webp","ddddddddddddddddddđ"));
-        list.add(new Product(3,"vv",2,14,"https://res.cloudinary.com/dkchoy5df/image/upload/v1691167512/Books/dgrmk3oikfxuni52gsmd.jpg","ddddddddddddddddddđ"));
-        list.add(new Product(4,"cc",2,15,"https://res.cloudinary.com/dkchoy5df/image/upload/v1691167512/Books/dgrmk3oikfxuni52gsmd.jpg","ddddddddddddddddddđ"));
-        list.add(new Product(5,"dd",2,12,"https://res.cloudinary.com/dkchoy5df/image/upload/v1691167512/Books/dgrmk3oikfxuni52gsmd.jpg","ddddddddddddddddddđ"));
+//        list.add(new Product(1,"aa",2,12,"https://res.cloudinary.com/dkchoy5df/image/upload/v1691167512/Books/dgrmk3oikfxuni52gsmd.jpg","ddddddddddddddddddđ"));
+//        list.add(new Product(2,"bb",2,13,"https://res.cloudinary.com/dkchoy5df/image/upload/v1691167359/Books/mq53ueg7mf6685qszyha.webp","ddddddddddddddddddđ"));
+//        list.add(new Product(3,"vv",2,14,"https://res.cloudinary.com/dkchoy5df/image/upload/v1691167512/Books/dgrmk3oikfxuni52gsmd.jpg","ddddddddddddddddddđ"));
+//        list.add(new Product(4,"cc",2,15,"https://res.cloudinary.com/dkchoy5df/image/upload/v1691167512/Books/dgrmk3oikfxuni52gsmd.jpg","ddddddddddddddddddđ"));
+//        list.add(new Product(5,"dd",2,12,"https://res.cloudinary.com/dkchoy5df/image/upload/v1691167512/Books/dgrmk3oikfxuni52gsmd.jpg","ddddddddddddddddddđ"));
         adapter=new MyOrderAdapter(list,getContext());
-        System.out.println(list.get(1).getName());
+        //System.out.println(list.get(1).getName());
         LinearLayoutManager layoutManager=new LinearLayoutManager(getContext());
 
         binding.rcvDelivered.setLayoutManager(layoutManager);

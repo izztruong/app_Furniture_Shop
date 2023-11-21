@@ -70,7 +70,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/textView29"
+                    android:id="@+id/txttotal_cart"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="12.00"

@@ -71,6 +71,14 @@
         app:layout_constraintVertical_bias="1.0">
 
         <TextView
+            android:id="@+id/txterr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#E91E63"
+            android:visibility="gone"
+             />
+
+        <TextView
             android:id="@+id/textView13"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -79,10 +87,18 @@
             android:textSize="18dp" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
+            android:id="@+id/edtname_signup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/txtnameerr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name required"
+            android:textColor="#E91E63"
+            android:visibility="gone" />
 
         <TextView
             android:id="@+id/textView14"
@@ -93,10 +109,17 @@
             android:textSize="18dp" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName4"
+            android:id="@+id/edtemail_signup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPersonName" />
+        <TextView
+            android:id="@+id/txtemaileerr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email required"
+            android:textColor="#E91E63"
+            android:visibility="gone" />
 
         <TextView
             android:id="@+id/textView15"
@@ -107,11 +130,18 @@
             android:textSize="18dp" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName5"
+            android:id="@+id/edtpassword_signup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPassword" />
+        <TextView
+            android:id="@+id/txtpasserr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password required"
+            android:textColor="#E91E63"
+            android:visibility="gone" />
 
         <TextView
             android:id="@+id/textView16"
@@ -122,14 +152,21 @@
             android:textSize="18dp" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName6"
+            android:id="@+id/edtrepass_signup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
 
             android:inputType="textPassword" />
+        <TextView
+            android:id="@+id/txtrepasserr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Repassword required"
+            android:textColor="#E91E63"
+            android:visibility="gone" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/button4"
+            android:id="@+id/btnsignup"
             android:layout_width="285dp"
 
             android:layout_height="wrap_content"

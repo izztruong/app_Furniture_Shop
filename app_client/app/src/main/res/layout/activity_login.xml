@@ -71,15 +71,22 @@
         app:layout_constraintVertical_bias="0.967">
 
         <TextView
+            android:id="@+id/txterr_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#E91E63"
+            android:visibility="gone" />
+
+        <TextView
             android:id="@+id/textView8"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="5dp"
-            android:text="Name:"
+            android:text="Email:"
             android:textSize="16dp" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName2"
+            android:id="@+id/edtemail_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
 
@@ -94,7 +101,7 @@
             android:textSize="16dp" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName3"
+            android:id="@+id/edtpass_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword" />
@@ -111,7 +118,7 @@
             android:textStyle="bold" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/button2"
+            android:id="@+id/btnlogin"
             android:layout_width="285dp"
             android:layout_height="50dp"
             android:layout_gravity="center"

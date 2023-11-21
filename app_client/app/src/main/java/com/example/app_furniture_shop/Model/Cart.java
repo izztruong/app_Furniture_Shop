@@ -1,27 +1,22 @@
 package com.example.app_furniture_shop.Model;
 
-import java.io.Serializable;
-
-public class Product implements Serializable {
+public class Cart {
     private int id;
     private String name;
     private String image;
     private float price;
     private int quantity;
-    private String description;
-    private int CategoryId;
 
-    public Product() {
+    public Cart() {
     }
 
-    public Product(int id, String name, String image, float price, int quantity, String description, int categoryId) {
+    public Cart(int id, String name,float price, String image,  int quantity) {
         this.id = id;
+
         this.name = name;
         this.image = image;
         this.price = price;
         this.quantity = quantity;
-        this.description = description;
-        CategoryId = categoryId;
     }
 
     public int getId() {
@@ -62,21 +57,5 @@ public class Product implements Serializable {
 
     public void setQuantity(int quantity) {
         this.quantity = quantity;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public int getCategoryId() {
-        return CategoryId;
-    }
-
-    public void setCategoryId(int categoryId) {
-        CategoryId = categoryId;
     }
 }

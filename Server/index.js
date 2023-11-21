@@ -4,6 +4,9 @@ require("dotenv").config();
 //require("./untils/passport");
 
 const bodyParser = require("body-parser");
+const userRouter = require("./routers/User.router");
+const product = require("./routers/Product.router");
+const cart = require("./routers/Cart.router");
 
 const db = require("./models");
 const { render } = require("ejs");
@@ -41,11 +44,11 @@ app.use(express.json());
 // const spacs = swaggerjsdoc(options);
 
 // app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(spacs));
-// app.use("/api", category);
-// app.use("/api", product);
+app.use("/api", cart);
+app.use("/api", product);
 // app.use("/api", promotion);
 // app.use("/api", comment);
-// app.use("/api", account);
+app.use("/api", userRouter);
 // app.use("/api", accounts_google);
 // app.use("/api", address);
 // app.use("/api", favorites);

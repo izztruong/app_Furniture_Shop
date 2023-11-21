@@ -9,6 +9,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.app_furniture_shop.DAO.UserDAO;
+import com.example.app_furniture_shop.LoginActivity;
 import com.example.app_furniture_shop.MyOrderActivity;
 import com.example.app_furniture_shop.R;
 import com.example.app_furniture_shop.databinding.FragmentProfileBinding;
@@ -25,6 +27,7 @@ public class ProfileFragment extends Fragment {
         View view= inflater.inflate(R.layout.fragment_profile, container, false);
         binding=FragmentProfileBinding.bind(view);
         onClickIconMyOrder();
+        onClickIconLogout();
         return view;
     }
     private void onClickIconMyOrder(){
@@ -32,6 +35,17 @@ public class ProfileFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(getActivity(), MyOrderActivity.class);
+                startActivity(intent);
+            }
+        });
+    }
+    private void onClickIconLogout(){
+        binding.iconlogoutProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                UserDAO dao=new UserDAO(getContext());
+                dao.deleteUser();
+                Intent intent=new Intent(getActivity(), LoginActivity.class);
                 startActivity(intent);
             }
         });
